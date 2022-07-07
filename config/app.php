@@ -54,9 +54,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://tintucxahoi.herokuapp.com'),
+    'url' => env('APP_URL'),
 
-    'asset_url' => env('ASSET_URL','https://tintucxahoi.herokuapp.com'),
+    'asset_url' => env('ASSET_URL'),
 
     /*
     |--------------------------------------------------------------------------

@@ -62,7 +62,13 @@
                                     <label for="exampleInputPassword1">Email</label>
                                     <input type="email" class="form-control" value="{{ $user->email }}" name="email" placeholder="Nhập email">
                                 </div>
-                                <input type="hidden" value="12345678" name="password">
+
+                                <!-- <input type="hidden" value="12345678" name="password"> -->
+                                <div class="col">
+                                    <label for="exampleInputPassword1">Mật khẩu</label>
+                                    <input type="password" class="form-control" value="{{ $user->password }}" name="password"
+                                        placeholder="Nhập mật khẩu">
+                                </div>
                                 <div class="col">
                                     <label for="exampleInputPassword1">Số điện thoại</label>
                                     <input type="number" class="form-control" value="{{ $user->sodienthoai }}" name="sodienthoai"

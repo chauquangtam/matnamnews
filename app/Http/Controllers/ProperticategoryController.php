@@ -7,7 +7,7 @@ use App\Models\Tintuc;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class ProperticategoryController extends Controller
+class PropertiCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.

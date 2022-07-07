@@ -151,7 +151,7 @@
             <!-- Ad Widget Start -->
             <div class="ad--widget">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <!-- <div class="col-sm-6">
                         <a href="https://docbao.qdnd.vn/readding">
                             <img src="{{asset('frontend/img/ads-img/150x150_banner_baoin.jpg')}}" alt="">
                         </a>
@@ -161,7 +161,7 @@
                         <a href="https://baomoi.com/chu-tich-ho-chi-minh/top/114.epi">
                             <img src="{{asset('frontend/img/ads-img/150x150_banner_hcm_02-min.png')}}" alt="">
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- Ad Widget End -->

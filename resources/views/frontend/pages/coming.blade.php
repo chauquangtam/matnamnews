@@ -7,11 +7,7 @@
 
     <!-- ==== Document Title ==== -->
     <title>Coming soon</title>
-    
-    <!-- ==== Document Meta ==== -->
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+
 
     @include('frontend.manager.link.css')
 </head>

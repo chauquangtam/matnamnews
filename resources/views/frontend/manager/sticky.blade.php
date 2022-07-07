@@ -2,12 +2,12 @@
  <div id="stickySocial" class="sticky--right">
     <ul class="nav">
         <li>
-            <a href="https://www.facebook.com/ngoccam651">
+            <a href="https://www.facebook.com/matnamtiktok" target="_blank">
                 <i class="fa fa-facebook"></i>
-                <span>Follow Us On Facebook</span>
+                <span>Theo dõi trên Facebook</span>
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#">
                 <i class="fa fa-twitter"></i>
                 <span>Follow Us On Twitter</span>
@@ -30,19 +30,19 @@
                 <i class="fa fa-vimeo"></i>
                 <span>Follow Us On Vimeo</span>
             </a>
-        </li>
+        </li> -->
         <li>
-            <a href="https://www.youtube.com/channel/UCk8UM8PAAV6PTn3eNuMthRQ">
+            <a href="https://www.youtube.com/c/M%E1%BA%ADtN%E1%BA%A5m" target="_blank">
                 <i class="fa fa-youtube-play"></i>
-                <span>Follow Us On Youtube Play</span>
+                <span>Theo dõi trên Youtube</span>
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#">
                 <i class="fa fa-linkedin"></i>
                 <span>Follow Us On LinkedIn</span>
             </a>
-        </li>
+        </li> -->
     </ul>
 </div>
 <!-- Sticky Social End -->

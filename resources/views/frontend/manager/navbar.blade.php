@@ -55,11 +55,11 @@ $tintucmoi = DB::table('tintucs')->where('trangthai',$duocduyet)->orderBy('creat
 
                 <!-- Header Topbar Social Start -->
                 <ul class="header--topbar-social nav hidden-sm hidden-xxs">
-                    <li><a href="https://www.facebook.com/ngoccam651"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/matnamtiktok" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCk8UM8PAAV6PTn3eNuMthRQ"><i class="fa fa-youtube-play"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+                    <li><a href="https://www.youtube.com/c/M%E1%BA%ADtN%E1%BA%A5m" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
                 </ul>
                 <!-- Header Topbar Social End -->
             </div>
@@ -75,20 +75,20 @@ $tintucmoi = DB::table('tintucs')->where('trangthai',$duocduyet)->orderBy('creat
                 <h1 class="h1">
                     <a href="{{ url('/') }}" class="btn-link" >
                         <video autoplay loop muted plays-inline width="60%">
-                            <source src="{{asset('frontend/img/KCN (online-video-cutter.com).mp4')}}"   style="video/mp4" >
+                            <source src="{{asset('frontend/img/matnam.mp4')}}"   style="video/mp4" >
                         </video>
-                        <span class="hidden">Kcnew - logo</span>
+                        <span class="hidden">MatNamVN -Trang tin tức tổng hợp</span>
                     </a>
                 </h1>
             </div>
             <!-- Header Logo End -->
 
             <!-- Header Ad Start -->
-            <div class="header--ad float--right float--sm-none hidden-xs"  style="width:60% ;margin-top:60px">
+            <!-- <div class="header--ad float--right float--sm-none hidden-xs"  style="width:60% ;margin-top:60px">
                 <a href="https://masterisehomes.com/the-rivus/?utm_source=adtima&utm_medium=impression&utm_campaign=rivus-adtima-impression-phase1-na-cpd-8B115F30-mastheadtoppc">
                     <img src="{{asset('frontend/img/ads-img/728x90_baner1.png')}}"  alt="Advertisement">
                 </a>
-            </div>
+            </div> -->
             <!-- Header Ad End -->
         </div>
     </div>
@@ -128,8 +128,8 @@ $tintucmoi = DB::table('tintucs')->where('trangthai',$duocduyet)->orderBy('creat
 
                             <li><a href="{{ url('about') }}">About</a></li>
 
-                            <li><a href="{{ url('/new/coming') }}">Coming Soon</a></li>
-                            <li><a href="{{ url('/error/404') }}">404</a></li>
+                            <!-- <li><a href="{{ url('/new/coming') }}">Coming Soon</a></li>
+                            <li><a href="{{ url('/error/404') }}">404</a></li> -->
                         </ul>
                     </li>
                 </ul>
@@ -156,6 +156,12 @@ $tintucmoi = DB::table('tintucs')->where('trangthai',$duocduyet)->orderBy('creat
 <div class="posts--filter-bar style--3 hidden-xs">
     <div class="container">
         <ul class="nav">
+        <li>
+                <a href="{{ url('weibotrungquoc') }}">
+                    <i class="fa fa-star-o"></i>
+                    <span>Tin tức Weibo ( Trung Quốc )</span>
+                </a>
+            </li>
             <li>
                 <a href="{{ url('tintucmoinhat') }}">
                     <i class="fa fa-star-o"></i>

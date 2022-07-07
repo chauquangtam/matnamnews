@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ==== Document Title ==== -->
-    <title>Kcnews - 404</title>
+    <title>404</title>
     
     <!-- ==== Document Meta ==== -->
     <meta name="author" content="">

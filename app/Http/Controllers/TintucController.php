@@ -118,7 +118,7 @@ class TintucController extends Controller
             $get_name_image = $get_image->getClientOriginalName();
             $name_image = current(explode('.',$get_name_image));
             $new_image = $name_image.rand(0,99).'.'.$get_image->getClientOriginalExtension();
-            $get_image->move('public/uploads/tintuc',$new_image);
+            $get_image->move('uploads/tintuc',$new_image);
             $tintuc->hinhanh = $new_image;
 
             $tintuc->save();
@@ -195,7 +195,7 @@ class TintucController extends Controller
             $get_name_image = $get_image->getClientOriginalName();
             $name_image = current(explode('.',$get_name_image));
             $new_image = $name_image.rand(0,99).'.'.$get_image->getClientOriginalExtension();
-            $get_image->move('public/uploads/tintuc',$new_image);
+            $get_image->move('uploads/tintuc',$new_image);
             $tintuc->hinhanh = $new_image;
 
             $tintuc->save();
@@ -259,7 +259,7 @@ class TintucController extends Controller
     public function timkiembaiviet(Request $request){
         $key =  $request->search;
         $tintuc =
-
+        $url_canonical=$request->url();
 
         
 
@@ -278,7 +278,7 @@ class TintucController extends Controller
                 
                         if ($pro->id_category == $cat->id) {
                             $nguoiduyetbai =  Tintuc::where('title','like','%'.$key.'%')->orderBy('created_at','DESC')->paginate(10);        
-                            return view('backend.pages.tintuc.timkiem',compact('nguoiduyetbai','user','tintucs'));
+                            return view('backend.pages.tintuc.timkiem',compact('url_canonical','nguoiduyetbai','user','tintucs'));
                         
                         }
                         
@@ -313,7 +313,7 @@ class TintucController extends Controller
             $get_name_image = $get_image->getClientOriginalName();
             $name_image = current(explode('.',$get_name_image));
             $new_image = $name_image.rand(0,99).'.'.$get_image->getClientOriginalExtension();
-            $get_image->move('public/uploads/tintuc',$new_image);
+            $get_image->move('uploads/tintuc',$new_image);
             $tintuc->hinhanh = $new_image;
 
             $tintuc->save();

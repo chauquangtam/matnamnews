@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 @section('title')
-    <title>Kcnews - About</title>
+    <title>Giới thiệu</title>
 @endsection
 
 @section('main')
@@ -13,24 +13,24 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="post--video embed-responsive embed-responsive-16by9">
-                            <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0&amp;controls=0&amp;showinfo=0&amp;wmode=transparent" allowfullscreen></iframe>
-                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7efpiKDPLh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="post--info">
                             <div class="title">
-                                <h2 class="h4">It is a long established fact that a reader will be distracted by the readable content</h2>
+                                <h2 class="h4">Mật Nấm - Kênh Youtube chia sẻ nhiều video được Vietsub bởi matnamvn.com</h2>
                             </div>
                         </div>
 
                         <div class="post--content">
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal making it look like readable english many desktop.</p>
+                            <p>Cô ấy là nhân viên thực tập của công ty tôi - P1: Vốn tưởng rằng chỉ muốn làm một người tốt, ai ngờ....</p>
 
                             <blockquote>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking.</p>
+                                <p>Cô ấy là nhân viên thực tập của công ty tôi - P1: Vốn tưởng rằng chỉ muốn làm một người tốt, ai ngờ....</p>
 
-                                <footer>Semyaza, Australia</footer>
+                                <footer>[Vietsub bởi matnamvn.com]</footer>
                             </blockquote>
                         </div>
                     </div>
@@ -49,11 +49,11 @@
                             </div>
 
                             <div class="title">
-                                <h3 class="h5">Our Goal</h3>
+                                <h3 class="h5">Nhiệm vụ</h3>
                             </div>
 
                             <div class="content">
-                                <p>Aliquam quam laudantium suscipit ullam aut perferendis vel dicta blanditiis eligendi ratione consequatur, magni facilis dolor cupiditate et.</p>
+                                <p>Chia sẻ bài viết trên weibo</p>
                             </div>
                         </div>
                         <!-- Info Block End -->
@@ -67,11 +67,11 @@
                             </div>
 
                             <div class="title">
-                                <h3 class="h5">Our Vission</h3>
+                                <h3 class="h5">Mục tiêu</h3>
                             </div>
 
                             <div class="content">
-                                <p>Aliquam quam laudantium suscipit ullam aut perferendis vel dicta blanditiis eligendi ratione consequatur, magni facilis dolor cupiditate et.</p>
+                                <p>Trở thành kênh chia sẻ bài viết weibo hay nhất</p>
                             </div>
                         </div>
                         <!-- Info Block End -->
@@ -85,11 +85,11 @@
                             </div>
 
                             <div class="title">
-                                <h3 class="h5">Our Mission</h3>
+                                <h3 class="h5">Tầm nhìn</h3>
                             </div>
 
                             <div class="content">
-                                <p>Aliquam quam laudantium suscipit ullam aut perferendis vel dicta blanditiis eligendi ratione consequatur, magni facilis dolor cupiditate et.</p>
+                                <p>Vietsub - chia sẻ bài viết weibo hay nhất</p>
                             </div>
                         </div>
                         <!-- Info Block End -->
@@ -103,11 +103,14 @@
                             </div>
 
                             <div class="title">
-                                <h3 class="h5">Our Objectives</h3>
+                                <h3 class="h5">Kênh phân phối chính</h3>
                             </div>
 
                             <div class="content">
-                                <p>Aliquam quam laudantium suscipit ullam aut perferendis vel dicta blanditiis eligendi ratione consequatur, magni facilis dolor cupiditate et.</p>
+                                <p>Tiktok : <a href="https://www.tiktok.com/@matnamvn" target="_blank">Mật Nấm</a></p>
+                                <p>Youtube : <a href="https://www.youtube.com/c/M%E1%BA%ADtN%E1%BA%A5m" target="_blank">Mật Nấm</a></p>
+                                <p>Youtube : <a href="https://www.facebook.com/matnamtiktok" target="_blank">Mật Nấm</a></p>
+                               
                             </div>
                         </div>
                         <!-- Info Block End -->

@@ -1,13 +1,13 @@
 @extends('layouts.frontend')
 @section('title')
-    <title>Kcnew - {{ $title }}</title>
+    <title>{{ $title }}</title>
 @endsection
 @section('main')
     <!-- Main Breadcrumb Start -->
     <div class="main--breadcrumb">
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="home-1.html" class="btn-link"><i class="fa fm fa-home"></i>Home</a></li>
+                <li><a href="{{ url('/') }}" class="btn-link"><i class="fa fm fa-home"></i>Home</a></li>
                 <li class="active"><span>{{ $title }}</span></li>
             </ul>
         </div>
@@ -17,12 +17,6 @@
     <!-- Main Content Section Start -->
     <div class="main-content--section pbottom--30">
         <div class="container">
-        
-
-           
-                
-           
-
             <div class="row">
                 <!-- Main Content Start -->
                 <div class="main--content col-md-8 col-sm-7" data-sticky-content="true">

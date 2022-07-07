@@ -112,7 +112,7 @@
                                 <div class="col">
                                     <label for="examleInput">Thêm hình ảnh <span style="color: red"> *</span></label>
                                     <input type="file" name="hinhanh" class="form-control">
-                                    <img src="{{ URL::to('public/uploads/tintuc/'.$tintuc->hinhanh) }}" width="100px" height="100px" alt="">
+                                    <img src="{{ URL::asset('uploads/tintuc/'.$tintuc->hinhanh) }}" width="100px" height="100px" alt="">
                                 </div>
                                 <hr>
                                 <div class="col">

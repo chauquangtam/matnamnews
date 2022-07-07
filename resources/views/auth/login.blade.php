@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="frontend/img/matnam.png" type="image/png">
+    <meta name="robots" content="INDEX,FOLLOW" />
     <!-- ==== Document Title ==== -->
-    <title>USNews - Multipurpose News, Magazine and Blog HTML5 Template</title>
-    
+    <title>Đăng nhập</title>
+    <link name="canonical" href="matnamvn.com/login" />
+    <!-- ==== Document Meta ==== -->
+    <meta name="title" content="Đăng nhập" />
     <!-- ==== Document Meta ==== -->
     <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
+    <meta name="description" content="Đăng nhập matnamvn.com">
+    <meta name="keywords" content="dang nhap matnamvn, matnamvn.com, matnamvn">
+    <!-- ==== Document Meta ==== -->
+    <meta property="og:title" content="Đăng nhập" />
+    <meta property="og:description" content="Đăng nhập matnamvn.com" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="article" />
     <!-- ==== Favicons ==== -->
-    <link rel="icon" href="favicon.png" type="{{ url('public/frontend') }}/image/png">
 
     <!-- ==== Google Font ==== -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
 
     <!-- ==== Font Awesome ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="{{ url('frontend') }}/css/font-awesome.min.css">
+
     <!-- ==== Bootstrap Framework ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="{{ url('frontend') }}/css/bootstrap.min.css">
+
     <!-- ==== Bar Rating Plugin ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/css/fontawesome-stars-o.min.css">
-    
+    <link rel="stylesheet" href="{{ url('frontend') }}/css/fontawesome-stars-o.min.css">
+
     <!-- ==== Main Stylesheet ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/style.css">
-    
+    <link rel="stylesheet" href="{{ url('frontend') }}/style.css">
+
     <!-- ==== Responsive Stylesheet ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/css/responsive-style.css">
+    <link rel="stylesheet" href="{{ url('frontend') }}/css/responsive-style.css">
 
     <!-- ==== Theme Color Stylesheet ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/css/colors/theme-color-1.css" id="changeColorScheme">
-    
+    <link rel="stylesheet" href="{{ url('frontend') }}/css/colors/theme-color-1.css" id="changeColorScheme">
+
     <!-- ==== Custom Stylesheet ==== -->
-    <link rel="stylesheet" href="{{ url('public/frontend') }}/css/custom.css">
+    <link rel="stylesheet" href="{{ url('frontend') }}/css/custom.css">
 
     <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
     <!--[if lt IE 9]>
@@ -46,6 +53,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
 
     <!-- Preloader Start -->
@@ -76,9 +84,9 @@
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
                                 @enderror
                             </label>
                         </div>
@@ -89,9 +97,9 @@
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
                                 @enderror
                             </label>
                         </div>
@@ -104,13 +112,15 @@
                         </div>
 
                         <button type="submit" class="btn btn-lg btn-block btn-primary">
-                            {{ __('Login') }}
+                            {{ __('Đăng nhập') }}
                         </button>
-                       
+                        <button type="submit" class="btn btn-lg btn-block btn-info">
+                        Đăng nhập bằng Google
+                        </button>
                         <p class="help-block clearfix">
-                           
-                            <a href="{{ route('password.request') }}" class="btn-link pull-left">Forgot Username or Password?</a>
-                            <a href="{{ route('register') }}" class="btn-link pull-right">Create An Account</a>
+
+                            <!-- <a href="{{ route('password.request') }}" class="btn-link pull-left">Quên mật khẩu?</a> -->
+                            <a href="{{ route('register') }}" class="btn-link pull-right">Tạo tài khoản mới</a>
                         </p>
                     </form>
                 </div>
@@ -122,51 +132,50 @@
     <!-- Wrapper End -->
 
     <!-- ==== jQuery Library ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery-3.2.1.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery-3.2.1.min.js"></script>
 
     <!-- ==== Bootstrap Framework ==== -->
-    <script src="{{ url('public/frontend') }}/js/bootstrap.min.js"></script>
+    <script src="{{ url('frontend') }}/js/bootstrap.min.js"></script>
 
     <!-- ==== StickyJS Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.sticky.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.sticky.min.js"></script>
 
     <!-- ==== HoverIntent Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.hoverIntent.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.hoverIntent.min.js"></script>
 
     <!-- ==== Marquee Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.marquee.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.marquee.min.js"></script>
 
     <!-- ==== Validation Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.validate.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.validate.min.js"></script>
 
     <!-- ==== Isotope Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/isotope.min.js"></script>
+    <script src="{{ url('frontend') }}/js/isotope.min.js"></script>
 
     <!-- ==== Resize Sensor Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/resizesensor.min.js"></script>
+    <script src="{{ url('frontend') }}/js/resizesensor.min.js"></script>
 
     <!-- ==== Sticky Sidebar Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/theia-sticky-sidebar.min.js"></script>
+    <script src="{{ url('frontend') }}/js/theia-sticky-sidebar.min.js"></script>
 
     <!-- ==== Zoom Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.zoom.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.zoom.min.js"></script>
 
     <!-- ==== Bar Rating Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.barrating.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.barrating.min.js"></script>
 
     <!-- ==== Countdown Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/jquery.countdown.min.js"></script>
+    <script src="{{ url('frontend') }}/js/jquery.countdown.min.js"></script>
 
     <!-- ==== RetinaJS Plugin ==== -->
-    <script src="{{ url('public/frontend') }}/js/retina.min.js"></script>
+    <script src="{{ url('frontend') }}/js/retina.min.js"></script>
 
     <!-- ==== Google Map API ==== -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc"></script>
 
     <!-- ==== Main JavaScript ==== -->
-    <script src="{{ url('public/frontend') }}/js/main.js"></script>
+    <script src="{{ url('frontend') }}/js/main.js"></script>
 
 </body>
+
 </html>
-
-

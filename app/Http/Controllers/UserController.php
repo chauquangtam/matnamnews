@@ -150,13 +150,18 @@ class UserController extends Controller
             'sodienthoai.max' => 'Số điện thoại không hợp lệ',
             'role_select.required' => 'Chưa chọn vai trò cho người dùng',    
         ]);
+       
 
         $user = User::find($id);
+        $pwd = $user->password ;
         $user->name = $data['name'];
         $user->email = $data['email'];
         $user->sodienthoai = $data['sodienthoai'];
-
-        // $user->password = Hash::make($request->password);
+      
+        if ( !empty($request->password) ) {
+            $pwd = Hash::make($request->password);
+        }
+        $user->password = $pwd;
         if($request->role_select == 2){
             $user->vaitro = 1;
         }

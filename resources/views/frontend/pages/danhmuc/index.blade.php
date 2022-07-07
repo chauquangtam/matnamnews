@@ -1,6 +1,14 @@
 @extends('layouts.frontend')
 @section('title')
-    <title>Kcnew - {{ $title->title }}</title>
+    <title>{{ $title->title }}</title>
+    <meta name="title" content="{{ $title->title }}" />  
+     <!-- ==== Document Meta ==== -->
+     <meta name="author" content="">
+    <meta name="description" content="{{ $category->title }}">
+    <meta name="keywords" content="{{ $category->slug }}">
+    <!-- ==== Document Meta ==== -->
+    <meta property="og:title" content="{{ $title->title }}" />
+<meta property="og:description" content="{{ $category->title }}" />
 @endsection
 @section('main')
     <!-- Main Breadcrumb Start -->
@@ -240,10 +248,10 @@
                             <div class="col-md-12 ptop--30 pbottom--30">
                                 <!-- Advertisement Start -->
                                 <div class="ad--space">
-                                    <a href="https://masterisehomes.com/the-rivus/?utm_source=adtima&utm_medium=impression&utm_campaign=rivus-adtima-impression-phase1-na-cpd-8B115F30-mastheadtoppc">
+                                    <!-- <a href="https://masterisehomes.com/the-rivus/?utm_source=adtima&utm_medium=impression&utm_campaign=rivus-adtima-impression-phase1-na-cpd-8B115F30-mastheadtoppc">
                                         <img src="frontend/img/ads-img/728X90_banner2.png" alt=""
                                             class="center-block">
-                                    </a>
+                                    </a> -->
                                 </div>
                                 <!-- Advertisement End -->
                             </div>
@@ -539,11 +547,12 @@
             <!-- Main Content End -->
                 
             <!-- Advertisement Start -->
-            <div class="ad--space pd--30-0">
-                <a href="https://burine.vn/">
+            <!-- quảng cáo End -->
+           <div class="ad--space pd--30-0">
+                <!-- <a href="https://burine.vn/">
                     <img src="{{ url('frontend') }}/img/ads-img/970x90_banner_burine.png" alt="" class="center-block">
-                </a>
-            </div>
+                </a> -->
+             </div> 
             <!-- Advertisement End -->
 
             <div class="row">

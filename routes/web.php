@@ -36,6 +36,7 @@ use  App\Http\Controllers\BinhluanController;
  Route::get('/tinnong', [IndexController::class, 'tinnong']);
  Route::get('/xemnhieunhat', [IndexController::class, 'xemnhieunhat']);
  Route::get('/properti/{pro}', [IndexController::class, 'properti']);
+ Route::get('/weibotrungquoc', [IndexController::class, 'weibotrungquoc']);
  Route::get('/category/{cat}', [IndexController::class, 'category']);
  Route::get('/tag/{tag}', [IndexController::class, 'tag']);
 
@@ -47,15 +48,21 @@ use  App\Http\Controllers\BinhluanController;
 
 
 
-Route::get('/error/404', [IndexController::class, 'ero'])->name('404');
-Route::get('/new/coming', [IndexController::class, 'coming'])->name('coming');
+Route::get('/404', [IndexController::class, 'ero'])->name('404');
+Route::get('/coming', [IndexController::class, 'coming'])->name('coming');
 Route::get('/about', [IndexController::class, 'about'])->name('about');
 
 
 Route::get('/report{id}', [IndexController::class, 'report'])->name('report');
 
-
-
+Route::get('/reset-password', [IndexController::class, 'doimatkhau'])->name('doimatkhau');
+Route::get('/clear-cache', function () {
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('view:clear');
+    return 'DONE'; //Return anything
+});
 
 
 
