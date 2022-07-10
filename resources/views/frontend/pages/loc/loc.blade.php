@@ -45,7 +45,7 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="post--img">
-                                                            <a href="{{ route('bai-viet',['slug'=>$tintuc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $tintuc->hinhanh }}" alt=""></a>
+                                                            <a href="{{ route('bai-viet',['slug'=>$tintuc->slug]) }}" class="thumb"><img src="{{asset('uploads/tintuc/'.$tintuc->hinhanh)}}" alt=""></a>
                                                             <a href="{{ url('properti/'.$tintuc->tintucProperti->slug) }}" class="cat">{{ $tintuc->tintucProperti->title }}</a>
                                                             {{-- <a href="#" class="icon"><i class="fa fa-eye"></i></a> --}}
                                                         </div>

@@ -23,7 +23,6 @@
                         <div class="row gutter--15">
                             @foreach ($f_f_e as $f_f_e)
                             <div class="col-xs-6 col-xss-12">
-                                <!-- Post Item Start -->
                                 <div class="post--item post--layout-1 post--title-large">
                                     <div class="post--img">
                                         <a href="{{ route('bai-viet',['slug'=>$f_f_e->slug]) }}" class="thumb"><img src="{{asset('uploads/tintuc/'.$f_f_e->hinhanh)}}" alt=""></a>
@@ -50,7 +49,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Post Item End -->
                             </div>
                             @endforeach
 
@@ -143,7 +141,7 @@
                         <div class="col-md-6 ptop--30 pbottom--30">
                             <!-- Post Items Title Start -->
                             <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Tin thế giới</h2>
+                                <h2 class="h4">Câu chuyện ngắn</h2>
                             </div>
                             <!-- Post Items Title End -->
 
@@ -263,7 +261,7 @@
                         <div class="col-md-6 ptop--30 pbottom--30">
                             <!-- Post Items Title Start -->
                             <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Công nghệ</h2>
+                                <h2 class="h4">Siêu xe</h2>
 
 
                             </div>
@@ -354,18 +352,16 @@
                         <div class="col-md-12 ptop--30 pbottom--30">
                             <!-- Post Items Title Start -->
                             <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Giáo dục</h2>
+                                <h2 class="h4">Kênh Mật Nấm</h2>
 
 
                             </div>
-                            <!-- Post Items Title End -->
 
-                            <!-- Post Items Start -->
                             <div class="post--items post--items-2" data-ajax-content="outer">
                                 <ul class="nav row" data-ajax-content="inner">
                                     @foreach ($giao_duc as $giao_duc)
                                     <li class="col-md-6">
-                                        <!-- Post Item Start -->
+                               
                                         <div class="post--item post--layout-2">
                                             <div class="post--img">
                                                 <a href="{{ route('bai-viet',['slug'=>$giao_duc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $giao_duc->hinhanh }}" alt=""></a>
@@ -389,19 +385,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Post Item End -->
+                                 
                                     </li>
                                     @endforeach
                                     <li class="col-md-6">
                                         <ul class="nav row">
                                             <li class="col-xs-12 hidden-md hidden-lg">
-                                                <!-- Divider Start -->
+                                         
                                                 <hr class="divider">
-                                                <!-- Divider End -->
+                                
                                             </li>
                                             @foreach ($giao_duc2 as $giao_duc2)
                                             <li class="col-xs-6">
-                                                <!-- Post Item Start -->
+                                 
                                                 <div class="post--item post--layout-2">
                                                     <div class="post--img">
                                                         <a href="{{ route('bai-viet',['slug'=>$giao_duc2->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $giao_duc2->hinhanh }}" alt=""></a>
@@ -423,20 +419,20 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- Post Item End -->
+                                      
                                             </li>
                                             @endforeach
 
 
                                             <li class="col-xs-12">
-                                                <!-- Divider Start -->
+                                     
                                                 <hr class="divider">
-                                                <!-- Divider End -->
+                                     
                                             </li>
 
                                             @foreach ($giao_duc3 as $giao_duc3)
                                             <li class="col-xs-6">
-                                                <!-- Post Item Start -->
+                                      
                                                 <div class="post--item post--layout-2">
                                                     <div class="post--img">
                                                         <a href="{{ route('bai-viet',['slug'=>$giao_duc3->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $giao_duc3->hinhanh }}" alt=""></a>
@@ -458,7 +454,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- Post Item End -->
+                                 
                                             </li>
                                             @endforeach
                                         </ul>
@@ -467,200 +463,190 @@
 
 
                             </div>
-                            <!-- Post Items End -->
+                     
                         </div>
-                        <!-- Finance End -->
-
-                        <!-- Politics Start -->
                         <div class="col-md-6 ptop--30 pbottom--30">
-                            <!-- Post Items Title Start -->
+
                             <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Thể thao</h2>
+                                <h2 class="h4">Anime</h2>
 
 
                             </div>
-                            <!-- Post Items Title End -->
 
-                            <!-- Post Items Start -->
-                            <div class="post--items post--items-2" data-ajax-content="outer">
-                                <ul class="nav row gutter--15" data-ajax-content="inner">
-                                    @foreach($the_thao as $thethao)
-                                    <li class="col-xs-12">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-1">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$thethao->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $thethao->hinhanh }}" alt=""></a>
-                                                <a href="{{ url('properti/'.$thethao->tintucProperti->slug) }}" class="cat">{{ $thethao->tintucProperti->title }}</a>
-                                                <a href="#" class="icon"><i class="fa fa-fire"></i></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $thethao->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $thethao->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$thethao->slug]) }}" class="btn-link">{{ $thethao->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                    <li class="col-xs-12">
-                                        <!-- Divider Start -->
-                                        <hr class="divider">
-                                        <!-- Divider End -->
-                                    </li>
-                                    @foreach($the_thao2 as $thethao)
-                                    <li class="col-xs-6">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-2">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$thethao->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $thethao->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $thethao->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $thethao->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$thethao->slug]) }}" class="btn-link">{{ $thethao->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-
-                                    <li class="col-xs-12">
-                                        <!-- Divider Start -->
-                                        <hr class="divider">
-                                        <!-- Divider End -->
-                                    </li>
-                                    @foreach($the_thao3 as $thethao)
-                                    <li class="col-xs-6">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-2">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$thethao->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $thethao->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $thethao->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $thethao->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$thethao->slug]) }}" class="btn-link">{{ $thethao->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                </ul>
-
-
-                            </div>
-                            <!-- Post Items End -->
-                        </div>
-                        <!-- Politics End -->
-
-                        <!-- Sports Start -->
-                        <div class="col-md-6 ptop--30 pbottom--30">
-                            <!-- Post Items Title Start -->
-                            <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Khoa học</h2>
-
-
-                            </div>
-                            <!-- Post Items Title End -->
-
-                            <!-- Post Items Start -->
                             <div class="post--items post--items-3" data-ajax-content="outer">
                                 <ul class="nav" data-ajax-content="inner">
-                                    @foreach($khoa_hoc as $khoahoc)
+                                    @foreach($doi_song as $doisong)
                                     <li>
-                                        <!-- Post Item Start -->
+
                                         <div class="post--item post--layout-1">
                                             <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$khoahoc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $khoahoc->hinhanh }}" alt=""></a>
-                                                <a href="{{ url('properti/'.$khoahoc->tintucProperti->slug) }}" class="cat">{{ $khoahoc->tintucProperti->title }}</a>
-                                                <a href="#" class="icon"><i class="fa fa-eye"></i></a>
+                                                <a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $doisong->hinhanh }}" alt=""></a>
+                                                <a href="{{ url('properti/'.$doisong->tintucProperti->slug) }}" class="cat">{{ $doisong->tintucProperti->title }}</a>
+                                                <a href="#" class="icon"><i class="fa fa-star-o"></i></a>
 
                                                 <div class="post--info">
                                                     <ul class="nav meta">
                                                         @foreach ($user as $u)
-                                                        @if ($u->id == $khoahoc->tacgia)
+                                                        @if ($u->id == $doisong->tacgia)
                                                         <li><a href="#">{{ $u->name }}</a>
                                                         </li>
                                                         @endif
                                                         @endforeach
-                                                        <li><a href="#">{{ $khoahoc->ngayduyet }}</li>
+                                                        <li><a href="#">{{ $doisong->ngayduyet }}</a></li>
                                                     </ul>
 
                                                     <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$khoahoc->slug]) }}" class="btn-link">{{ $khoahoc->title }}</a></h3>
+                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="btn-link">{{$doisong->title }}</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Post Item End -->
+
                                     </li>
                                     @endforeach
-                                    @foreach($khoa_hoc2 as $khoahoc)
+                                    @foreach($doi_song2 as $doisong)
                                     <li>
-                                        <!-- Post Item Start -->
+
                                         <div class="post--item post--layout-3">
                                             <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$khoahoc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $khoahoc->hinhanh }}" alt=""></a>
+                                                <a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $doisong->hinhanh }}" alt=""></a>
 
                                                 <div class="post--info">
                                                     <ul class="nav meta">
                                                         @foreach ($user as $u)
-                                                        @if ($u->id == $thethao->tacgia)
+                                                        @if ($u->id == $doisong->tacgia)
                                                         <li><a href="#">{{ $u->name }}</a>
                                                         </li>
                                                         @endif
                                                         @endforeach
-                                                        <li><a href="#">{{ $khoahoc->ngayduyet }}</a></li>
+                                                        <li><a href="#">{{ $doisong->ngayduyet }}</a></li>
                                                     </ul>
 
                                                     <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$khoahoc->slug]) }}" class="btn-link">{{ $khoahoc->title }}</a></h3>
+                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="btn-link">{{$doisong->title }}</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Post Item End -->
+
+                                    </li>
+                                    @endforeach
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 ptop--30 pbottom--30">
+
+                            <div class="post--items-title" data-ajax="tab">
+                                <h2 class="h4">Cosplay</h2>
+
+
+                            </div>
+
+                            <div class="post--items post--items-2" data-ajax-content="outer">
+                                <ul class="nav row gutter--15" data-ajax-content="inner">
+                                    @foreach($phap_luat as $phapluat)
+                                    <li class="col-xs-12">
+
+                                        <div class="post--item post--layout-1">
+                                            <div class="post--img">
+                                                <a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $phapluat->hinhanh }}" alt=""></a>
+                                                <a href="{{ url('properti/'.$phapluat->tintucProperti->slug) }}" class="cat">{{ $phapluat->tintucProperti->title }}</a>
+                                                <a href="#" class="icon"><i class="fa fa-heart-o"></i></a>
+
+                                                <div class="post--info">
+                                                    <ul class="nav meta">
+                                                        @foreach ($user as $u)
+                                                        @if ($u->id == $phapluat->tacgia)
+                                                        <li><a href="#">{{ $u->name }}</a>
+                                                        </li>
+                                                        @endif
+                                                        @endforeach
+                                                        <li><a href="#">{{ $phapluat->ngayduyet }}</a></li>
+                                                    </ul>
+
+                                                    <div class="title">
+                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="btn-link">{{$phapluat->title}}</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    @endforeach
+                                    <li class="col-xs-12">
+
+                                        <hr class="divider">
+
+                                    </li>
+                                    @foreach($phap_luat2 as $phapluat)
+                                    <li class="col-xs-6">
+
+                                        <div class="post--item post--layout-2">
+                                            <div class="post--img">
+                                                <a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $phapluat->hinhanh }}" alt=""></a>
+
+                                                <div class="post--info">
+                                                    <ul class="nav meta">
+                                                        @foreach ($user as $u)
+                                                        @if ($u->id == $phapluat->tacgia)
+                                                        <li><a href="#">{{ $u->name }}</a>
+                                                        </li>
+                                                        @endif
+                                                        @endforeach
+                                                        <li><a href="#">{{ $phapluat->ngayduyet }}</a></li>
+                                                    </ul>
+
+                                                    <div class="title">
+                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="btn-link">{{ $phapluat->title }}</a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    @endforeach
+                                    <li class="col-xs-12">
+
+                                        <hr class="divider">
+
+                                    </li>
+                                    @foreach($phap_luat3 as $phapluat)
+                                    <li class="col-xs-6">
+
+                                        <div class="post--item post--layout-2">
+                                            <div class="post--img">
+                                                <a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $phapluat->hinhanh }}" alt=""></a>
+
+                                                <div class="post--info">
+                                                    <ul class="nav meta">
+                                                        @foreach ($user as $u)
+                                                        @if ($u->id == $phapluat->tacgia)
+                                                        <li><a href="#">{{ $u->name }}</a>
+                                                        </li>
+                                                        @endif
+                                                        @endforeach
+                                                        <li><a href="#">{{ $phapluat->ngayduyet }}</a></li>
+                                                    </ul>
+
+                                                    <div class="title">
+                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="btn-link">{{ $phapluat->title }}</a></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </li>
                                     @endforeach
                                 </ul>
 
                             </div>
-                            <!-- Post Items End -->
+
                         </div>
-                        <!-- Sports End -->
                     </div>
                 </div>
             </div>
@@ -769,321 +755,6 @@
             <div class="main--content col-md-8 col-sm-7" data-sticky-content="true">
                 <div class="sticky-content-inner">
                     <div class="row">
-                        <!-- Health and fitness Start -->
-                        <div class="col-md-6 ptop--30 pbottom--30">
-                            <!-- Post Items Title Start -->
-                            <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Đời sống</h2>
-
-
-                            </div>
-                            <!-- Post Items Title End -->
-
-                            <!-- Post Items Start -->
-                            <div class="post--items post--items-3" data-ajax-content="outer">
-                                <ul class="nav" data-ajax-content="inner">
-                                    @foreach($doi_song as $doisong)
-                                    <li>
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-1">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $doisong->hinhanh }}" alt=""></a>
-                                                <a href="{{ url('properti/'.$doisong->tintucProperti->slug) }}" class="cat">{{ $doisong->tintucProperti->title }}</a>
-                                                <a href="#" class="icon"><i class="fa fa-star-o"></i></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $doisong->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $doisong->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="btn-link">{{$doisong->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                    @foreach($doi_song2 as $doisong)
-                                    <li>
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-3">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $doisong->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $doisong->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $doisong->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$doisong->slug]) }}" class="btn-link">{{$doisong->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                </ul>
-
-
-                            </div>
-                            <!-- Post Items End -->
-                        </div>
-                        <!-- Health and fitness End -->
-
-                        <!-- Lifestyle Start -->
-                        <div class="col-md-6 ptop--30 pbottom--30">
-                            <!-- Post Items Title Start -->
-                            <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Pháp luật</h2>
-
-
-                            </div>
-                            <!-- Post Items Title End -->
-
-                            <!-- Post Items Start -->
-                            <div class="post--items post--items-2" data-ajax-content="outer">
-                                <ul class="nav row gutter--15" data-ajax-content="inner">
-                                    @foreach($phap_luat as $phapluat)
-                                    <li class="col-xs-12">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-1">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $phapluat->hinhanh }}" alt=""></a>
-                                                <a href="{{ url('properti/'.$phapluat->tintucProperti->slug) }}" class="cat">{{ $phapluat->tintucProperti->title }}</a>
-                                                <a href="#" class="icon"><i class="fa fa-heart-o"></i></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $phapluat->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $phapluat->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="btn-link">{{$phapluat->title}}</a>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                    <li class="col-xs-12">
-                                        <!-- Divider Start -->
-                                        <hr class="divider">
-                                        <!-- Divider End -->
-                                    </li>
-                                    @foreach($phap_luat2 as $phapluat)
-                                    <li class="col-xs-6">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-2">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $phapluat->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $phapluat->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $phapluat->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="btn-link">{{ $phapluat->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                    <li class="col-xs-12">
-                                        <!-- Divider Start -->
-                                        <hr class="divider">
-                                        <!-- Divider End -->
-                                    </li>
-                                    @foreach($phap_luat3 as $phapluat)
-                                    <li class="col-xs-6">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-2">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $phapluat->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $phapluat->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $phapluat->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$phapluat->slug]) }}" class="btn-link">{{ $phapluat->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                </ul>
-
-                            </div>
-                            <!-- Post Items End -->
-                        </div>
-                        <!-- Lifestyle End -->
-
-                        <!-- Foods and Recipes Start -->
-                        <div class="col-md-12 ptop--30 pbottom--30">
-                            <!-- Post Items Title Start -->
-                            <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Giải trí</h2>
-
-
-                            </div>
-                            <!-- Post Items Title End -->
-
-                            <!-- Post Items Start -->
-                            <div class="post--items" data-ajax-content="outer">
-                                <ul class="nav row gutter--15" data-ajax-content="inner">
-                                    @foreach($giai_tri as $giaitri)
-                                    <li class="col-md-4 col-xs-6 col-xxs-12">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-1">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$giaitri->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $giaitri->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $giaitri->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $giaitri->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h3 class="h4"><a href="{{ route('bai-viet',['slug'=>$giaitri->slug]) }}" class="btn-link">{{ $giaitri->title }}</a></h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-
-                                </ul>
-
-
-                            </div>
-                            <!-- Post Items End -->
-                        </div>
-                        <!-- Foods and Recipes End -->
-
-                        <!-- Photo Gallery Start -->
-                        <div class="col-md-12 ptop--30 pbottom--30">
-                            <!-- Post Items Title Start -->
-                            <div class="post--items-title" data-ajax="tab">
-                                <h2 class="h4">Kinh tế</h2>
-
-                            </div>
-                            <!-- Post Items Title End -->
-
-                            <!-- Post Items Start -->
-                            <div class="post--items post--items-1" data-ajax-content="outer">
-                                <ul class="nav row gutter--15" data-ajax-content="inner">
-                                    @foreach($kinh_te as $kinhte)
-                                    <li class="col-md-12">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-1 post--title-large">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$kinhte->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $kinhte->hinhanh }}" alt=""></a>
-                                                <a href="{{ url('properti/'.$kinhte->tintucProperti->slug) }}" class="cat">{{ $kinhte->tintucProperti->title }}</a>
-                                                <a href="#" class="icon"><i class="fa fa-eye"></i></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $kinhte->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $kinhte->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title text-xxs-ellipsis">
-                                                        <h2 class="h4"><a href="{{ route('bai-viet',['slug'=>$kinhte->slug]) }}" class="btn-link">{{ $kinhte->title }}</a></h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-                                    @foreach($kinh_te2 as $kinhte)
-                                    <li class="col-md-4 col-xs-6 col-xxs-12">
-                                        <!-- Post Item Start -->
-                                        <div class="post--item post--layout-1">
-                                            <div class="post--img">
-                                                <a href="{{ route('bai-viet',['slug'=>$kinhte->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $kinhte->hinhanh }}" alt=""></a>
-
-                                                <div class="post--info">
-                                                    <ul class="nav meta">
-                                                        @foreach ($user as $u)
-                                                        @if ($u->id == $kinhte->tacgia)
-                                                        <li><a href="#">{{ $u->name }}</a>
-                                                        </li>
-                                                        @endif
-                                                        @endforeach
-                                                        <li><a href="#">{{ $kinhte->ngayduyet }}</a></li>
-                                                    </ul>
-
-                                                    <div class="title">
-                                                        <h2 class="h4"><a href="{{ route('bai-viet',['slug'=>$kinhte->slug]) }}" class="btn-link">{{ $kinhte->title }}</a></h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Post Item End -->
-                                    </li>
-                                    @endforeach
-
-                                </ul>
-
-                            </div>
-                            <!-- Post Items End -->
-                        </div>
-                        <!-- Photo Gallery End -->
                     </div>
                 </div>
             </div>

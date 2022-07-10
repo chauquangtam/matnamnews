@@ -16,7 +16,7 @@
     <div class="container">
         <ul class="breadcrumb">
             <li><a href="{{ url('/') }}" class="btn-link"><i class="fa fm fa-home"></i>Trang Chủ</a></li>
-            <li><a href="travel.html" class="btn-link">{{ $tin->tintucCategory->title }}</a></li>
+            <li><span>{{ $tin->tintucCategory->title }}</span></li>
             <li class="active"><span>{{ $tin->title }}</span></li>
         </ul>
     </div>

@@ -21,17 +21,16 @@ class IndexController extends Controller
     {
 
         $url_canonical = $request->url();
-        $xahoi = Category::where('slug', 'xa-hoi')->first();
-        $thegioi = Category::where('slug', 'the-gioi')->first();
-        $congnghe = Category::where('slug', 'cong-nghe')->first();
-        $giaoduc = Category::where('slug', 'giao-duc')->first();
-        $thethao = Category::where('slug', 'the-thao')->first();
-        $congnghe = Category::where('slug', 'cong-nghe')->first();
-        $khoahoc = Category::where('slug', 'khoa-hoc')->first();
-        $doisong = Category::where('slug', 'doi-song')->first();
-        $phapluat = Category::where('slug', 'phap-luat')->first();
-        $giaitri = Category::where('slug', 'giai-tri')->first();
-        $kinhte = Category::where('slug', 'kinh-te')->first();
+        // $xahoi = Category::where('slug', 'xa-hoi')->first();
+        $thegioi = Category::where('slug', 'cau-chuyen-ngan')->first();
+        $congnghe = Category::where('slug', 'sieu-xe')->first();
+        $giaoduc = Category::where('slug', 'mat-nam-tiktok')->first();
+        // $thethao = Category::where('slug', 'the-thao')->first();
+        // $khoahoc = Category::where('slug', 'khoa-hoc')->first();
+        $doisong = Category::where('slug', 'anime')->first();
+        $phapluat = Category::where('slug', 'cosplay')->first();
+        // $giaitri = Category::where('slug', 'giai-tri')->first();
+        // $kinhte = Category::where('slug', 'kinh-te')->first();
 
 
         $duyet = 1;
@@ -65,12 +64,12 @@ class IndexController extends Controller
         $giao_duc3 = Tintuc::where('id_category', $giaoduc->id)->where('trangthai', $duyet)->orderBy('created_at', 'ASC')->take(2)->get();
 
 
-        $the_thao = Tintuc::where('id_category', $thethao->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
-        $the_thao2 = Tintuc::where('id_category', $thethao->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(2)->get();
-        $the_thao3 = Tintuc::where('id_category', $thethao->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(2)->get();
+        // $the_thao = Tintuc::where('id_category', $thethao->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
+        // $the_thao2 = Tintuc::where('id_category', $thethao->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(2)->get();
+        // $the_thao3 = Tintuc::where('id_category', $thethao->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(2)->get();
 
-        $khoa_hoc = Tintuc::where('id_category', $khoahoc->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
-        $khoa_hoc2 = Tintuc::where('id_category', $khoahoc->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(4)->get();
+        // $khoa_hoc = Tintuc::where('id_category', $khoahoc->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
+        // $khoa_hoc2 = Tintuc::where('id_category', $khoahoc->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(4)->get();
 
         $phap_luat = Tintuc::where('id_category', $phapluat->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
         $phap_luat2 = Tintuc::where('id_category', $phapluat->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(2)->get();
@@ -79,10 +78,10 @@ class IndexController extends Controller
         $doi_song = Tintuc::where('id_category', $doisong->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
         $doi_song2 = Tintuc::where('id_category', $doisong->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(4)->get();
 
-        $kinh_te = Tintuc::where('id_category', $kinhte->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
-        $kinh_te2 = Tintuc::where('id_category', $kinhte->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(3)->get();
+        // $kinh_te = Tintuc::where('id_category', $kinhte->id)->where('trangthai', $duyet)->orderBy('luotxem', 'DESC')->take(1)->get();
+        // $kinh_te2 = Tintuc::where('id_category', $kinhte->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(3)->get();
 
-        $giai_tri = Tintuc::where('id_category', $giaitri->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(3)->get();
+        // $giai_tri = Tintuc::where('id_category', $giaitri->id)->where('trangthai', $duyet)->orderBy('created_at', 'DESC')->take(3)->get();
 
 
 
@@ -99,21 +98,18 @@ class IndexController extends Controller
             'url_canonical',
             'video2',
             'video',
-            'kinh_te2',
-            'kinh_te',
-            'giai_tri',
+         
+        
             'phap_luat3',
             'phap_luat2',
             'phap_luat',
             'doi_song2',
             'doi_song',
-            'khoa_hoc2',
-            'khoa_hoc',
-            'the_thao3',
-            'the_thao2',
+         
+        
             'giao_duc3',
             'giao_duc2',
-            'the_thao',
+           
             'giao_duc',
             'cong_nghe2',
             'the_gioi3',

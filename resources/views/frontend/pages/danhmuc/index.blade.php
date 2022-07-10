@@ -61,7 +61,7 @@
                         </div>
                         
                         <div class="col-md-6">
-                            <!-- Post Item Start -->
+                      
                             <div class="post--item post--layout-1 post--title-larger">
                                 <div class="post--img">
                                     <a href="{{ route('bai-viet',['slug'=>$xemnhieunhat->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $xemnhieunhat->hinhanh }}" alt=""></a>
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Post Item End -->
+                   
                         </div>
 
                         <div class="col-md-3">
@@ -106,38 +106,38 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Post Item End -->
+                               
                                 </div>
                                 @endforeach
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Post Items End -->
+          
             </div>
-            <!-- Main Content End -->
+    
 
             <div class="row">
-                <!-- Main Content Start -->
+        
                 <div class="main--content col-md-8 col-sm-7" data-sticky-content="true">
                     <div class="sticky-content-inner">
                         <div class="row">
-                            <!-- Theatre and Art Start -->
+                 
                             <div class="col-md-6 ptop--30 pbottom--30">
-                                <!-- Post Items Title Start -->
+                       
                                 <div class="post--items-title" data-ajax="tab">
                                     <h2 class="h4">{{ $c1->title }}</h2>
 
                                 
                                 </div>
-                                <!-- Post Items Title End -->
+                          
 
-                                <!-- Post Items Start -->
+                        
                                 <div class="post--items post--items-2" data-ajax-content="outer">
                                     <ul class="nav" data-ajax-content="inner">
                                         @foreach($w1 as $tintuc)
                                         <li>
-                                            <!-- Post Item Start -->
+                                 
                                             <div class="post--item post--layout-1">
                                                 <div class="post--img">
                                                     <a href="{{ route('bai-viet',['slug'=>$tintuc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $tintuc->hinhanh }}" alt=""></a>
@@ -164,36 +164,28 @@
                                                     <a href="{{ route('bai-viet',['slug'=>$tintuc->slug]) }}">Tiếp tục đọc... </a>
                                                 </div>
                                             </div>
-                                            <!-- Post Item End -->
+                                        
                                         </li>
                                         <li>
-                                            <!-- Divider Start -->
+                                       
                                             <hr class="divider">
-                                            <!-- Divider End -->
+                                     
                                         </li>
                                         @endforeach
                                     </ul>
 
                                   
                                 </div>
-                                <!-- Post Items End -->
+                       
                             </div>
-                            <!-- Theatre and Art End -->
-
-                            <!-- Festival Start -->
                             <div class="col-md-6 ptop--30 pbottom--30">
-                                <!-- Post Items Title Start -->
                                 <div class="post--items-title" data-ajax="tab">
                                     <h2 class="h4">{{ $c2->title }}</h2>
                                 </div>
-                                <!-- Post Items Title End -->
-
-                                <!-- Post Items Start -->
                                 <div class="post--items post--items-3" data-ajax-content="outer">
                                     <ul class="nav" data-ajax-content="inner">
                                         @foreach($w2 as $tintuc)
                                         <li>
-                                            <!-- Post Item Start -->
                                             <div class="post--item post--layout-1">
                                                 <div class="post--img">
                                                     <a href="{{ route('bai-viet',['slug'=>$tintuc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $tintuc->hinhanh }}" alt=""></a>
@@ -212,12 +204,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Post Item End -->
                                         </li>
                                         @endforeach
                                         @foreach($w3 as $tintuc)
                                         <li>
-                                            <!-- Post Item Start -->
                                             <div class="post--item post--layout-3">
                                                 <div class="post--img">
                                                     <a href="{{ route('bai-viet',['slug'=>$tintuc->slug]) }}" class="thumb"><img src="uploads/tintuc/{{ $tintuc->hinhanh}}" alt=""></a>
@@ -234,17 +224,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Post Item End -->
                                         </li>
                                         @endforeach
                                      
                                     </ul>
                                 </div> 
-                                <!-- Post Items End -->
                             </div>
-                            <!-- Festival End -->
-
-                            <!-- Ad Start -->
                             <div class="col-md-12 ptop--30 pbottom--30">
                                 <!-- Advertisement Start -->
                                 <div class="ad--space">
@@ -259,18 +244,13 @@
 
                             <!-- Celebrity Life and Style Start -->
                             <div class="col-md-12 ptop--30 pbottom--30">
-                                <!-- Post Items Title Start -->
                                 <div class="post--items-title" data-ajax="tab">
                                     <h2 class="h4">{{ $w4->tintucProperti->title }}</h2>
                                 </div>
-                                <!-- Post Items Title End -->
-
-                                <!-- Post Items Start -->
                                 <div class="post--items post--items-2" data-ajax-content="outer">
                                     <ul class="nav row" data-ajax-content="inner">
                                        
                                         <li class="col-md-12">
-                                            <!-- Post Item Start -->
                                             <div class="post--item">
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -303,7 +283,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Post Item End -->
                                         </li>
                                         
 
